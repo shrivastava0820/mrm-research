@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import r2_score
 
 # Load the data
-df = pd.read_csv('ml1/CarPrice_Assignment.csv')
+df = pd.read_csv('ml1\CarPrice_Assignment.csv')
 df1=df.drop(['car_ID', 'CarName','fueltype', 'aspiration', 'doornumber',  'carbody', 'drivewheel', 'enginelocation', 'enginetype', 'cylindernumber', 'fuelsystem'], axis=1)
 # Drop 'car_ID' and 'CarName' because they are not useful features for prediction
 df = df.drop(['car_ID', 'CarName'], axis=1)
